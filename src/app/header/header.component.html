@@ -1,0 +1,73 @@
+<header class="bg-white shadow-md">
+  <div
+    class="flex justify-between items-center py-2 px-5 border-b-2 border-gray-200"
+  >
+    <div class="flex items-center justify-between">
+      <img
+        src="https://www.emprenderconactitud.com/img/POC%20WCS%20(1).png"
+        alt="Logo de la empresa"
+        class="w-28 h-12 ml-6"
+      />
+    </div>
+
+    <div>
+      <ul class="flex items-center gap-3">
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/about']">About</a></li>
+        <li><a [routerLink]="['/service']">Service</a></li>
+        <li><a [routerLink]="['/products']">Products</a></li>
+
+        <button (click)="handleNavigate()">Go Home</button>
+        <li>Contact</li>
+
+        <a [routerLink]="['/dynamic/123']">
+          <button class="border">Go to Dynamic page</button>
+        </a>
+      </ul>
+    </div>
+
+    <!-- Botones de Registro y Contacto -->
+    <div class="flex items-center space-x-2">
+      <a
+        href="#"
+        class="px-2 py-2 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-semibold rounded-lg text-sm"
+        >Login</a
+      >
+      <a
+        [routerLink]="['/register']"
+        class="px-2 py-2 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white font-semibold rounded-lg text-sm"
+        >Register</a
+      >
+    </div>
+  </div>
+
+  <!-- 1 way data binding -->
+
+  <!-- <input type="text" [value]="name1" (keyup)="handleKeyUp1()" class="border" />
+  <h1>{{ name1 }}</h1> -->
+  <!-- 2 way data bimding -->
+  <!-- <input
+    type="text"
+    class="border"
+    (keyup)="handleKeyUp()"
+    [(ngModel)]="name"
+  />
+
+  <h1>{{ name }}</h1> -->
+  <!-- 
+  <div *ngIf="user" else fallback;>hello {{ user }}</div>
+
+  <ng-template #fallBack><h1>Hello Guest</h1></ng-template> -->
+
+  <!-- @if(user){
+  <p>Hello {{ user }}</p>
+  }@else if (user === 'teslim') {
+  <p>user is teslik</p>
+  }@else {
+  <p>Hello Guest</p>
+  }
+
+  <ul *ngFor="let item of lists">
+    <li>{{ item }}</li>
+  </ul> -->
+</header>

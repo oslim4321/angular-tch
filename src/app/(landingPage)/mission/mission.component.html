@@ -1,0 +1,25 @@
+<div class="bg-white p-10 mt-10">
+  <h2 class="text-center text-3xl">Nuestra Misión</h2>
+  <p class="mt-4">
+    En FidelizaMás, nuestra misión es transformar la fidelización, conectando a
+    empresas y clientes a través de emocionantes programas de recompensas
+    basados en tokens...
+  </p>
+
+  <h1 #header>hello</h1>
+  <input type="text" #inp2Valu placeholder="2nd input" />
+  <input
+    value="{{ text }}"
+    class="border"
+    type="text"
+    #inpValu
+    placeholder="first input"
+  />
+
+  <!-- (keyup)="handleChange(inpValu)" -->
+
+  <p>{{ text }}</p>
+
+  <button (click)="handleClick(inpValu, inp2Valu)">click me</button>
+  <!-- </div> -->
+</div>

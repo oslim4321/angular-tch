@@ -1,0 +1,11 @@
+<img
+  class="w-[300px] object-cover object-center"
+  [src]="singleProduct.image"
+  alt="Product Image"
+/>
+<h1>{{ singleProduct.title }}</h1>
+<p>{{ singleProduct.description }}</p>
+<p>{{ singleProduct.price }}</p>
+<p>{{ singleProduct.category }}</p>
+<p>Count: {{ singleProduct.rating.count }}</p>
+<p>Rate: {{ singleProduct.rating.rate }}</p>
